@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.wrapper header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+}
+
+.wrapper header .nav .logo{
+    cursor: pointer;
+}
+
+.wrapper header .nav .menu{
+    width: 300px;
+}
+
+.wrapper header .nav .menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper header .nav .menu ul li{
+    list-style: none;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.wrapper header .nav .menu ul li:hover{
+    color: #2196F3;
+    transition: 0.5s;
+}
+
+.wrapper header .connection{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+}
+
+.wrapper header .connection .fonts{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.wrapper header .connection .fonts:hover{
+    color: #2196F3;
+    transition: 0.5s;
+}
+
+.wrapper main{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 40px;
+}
+
+.wrapper main .section-one{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.wrapper main .section-one .bg-dark{
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.wrapper main .section-one h1{
+    position: absolute;
+    z-index: 9;
+    width: 696px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto , sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+.wrapper main .section-one button{
+    position: absolute;
+    bottom: 120px;
+    z-index: 9;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+    letter-spacing: 0.96px;
+}
+
+.wrapper main .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+    height: 251px;
+}
+
+.wrapper main .cards .cards-item{
+    width: 270px;
+    height: 251px;
+}
+
+.wrapper main .cards .cards-item .item-img{
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA;
+}
+
+.wrapper main .cards .cards-item .item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 270px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.wrapper main .cards .cards-item .item-info h5{
+    width: 270px;
+    color: #212121;
+    font-family: Roboto , sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.wrapper main .cards .cards-item .item-img p{
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.wrapper main .work{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 390px;
+    margin-top: 95px;
+}
+
+.wrapper main .work h2{
+    color: #212121;
+    text-align: center;
+    font-family: Roboto , sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.wrapper main .work .catalog{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 295px;
+}
+
+.wrapper main .work .catalog .catalog-img{
+    position: relative;
+    width: 370px;
+    height: 100%;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+
+.wrapper main .work .catalog .img-bg-dark{
+    position: absolute;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    opacity: 0.8;
+    color: #FFF;
+    
+}
+
+.wrapper main .work .catalog .img-bg-dark p{
+    font-family: Roboto , sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.wrapper main .work .catalog .catalog-img:hover .img-bg-dark{
+    transition: 0.5s;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper main .my-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    background: #F5F4FA;
+    margin-top: 95px;
+}
+
+.wrapper main .my-team h2{
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.wrapper main .my-team .team-cards{
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+}
+
+.wrapper main .my-team .team-cards .cards-item-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 270px;
+    height: 428px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.wrapper main .my-team .team-cards .cards-item-one .info{
+    width: 160px;
+    height: 50px;
+    /* margin-top: 30px; */
+    
+}
+.wrapper main .my-team .team-cards .cards-item-one .info h3{
+    color: #212121;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+
+}
+.wrapper main .my-team .team-cards .cards-item-one .info p{
+    color: #757575;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.48px;
+        margin-top: 10px;
+
+}
+
+.wrapper main .my-team .team-cards .cards-item-one .social{
+    width: 210px;
+    height: 45px;
+    font-size: 40px;
+}
+.wrapper main .my-team .team-cards .cards-item-one .social i{
+    width: 44px;
+    height: 45px;
+    font-size: 40px;
+    padding: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.wrapper main .my-team .team-cards .cards-item-one .social i:hover{
+    background-color: #2196F3;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+    transition: 0.5s;
+}
+
+.wrapper main .klent{
+    margin-top: 100px;
+    height: 300px;
+}
+.wrapper main .klent h3{
+    color: #212121;
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.wrapper main .klent .logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+}
+.wrapper main .klent .logo .logo-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+}
+
+.wrapper footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: #2F303A;
+}
+
+.wrapper footer .footer-box {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.wrapper footer .footer-box .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 230px;
+    height: 150px;
+}
+.wrapper footer .footer-box .logo h6{
+    color: #FFF;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.wrapper footer .footer-box .logo P{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.wrapper footer .footer-box .follow {
+    width: 200px;
+    height: 150px;
+}
+.wrapper footer .footer-box .follow h3{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase; 
+}
+.wrapper footer .footer-box .follow .social{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.wrapper footer .footer-box .follow .social i{
+    font-size: 30px;
+    transition: 0.5s;
+}
+.wrapper footer .footer-box .follow .social i:hover{
+    background-color: #2196F3;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 0.5s;
+    color: white;
+}
+
+.wrapper footer .footer-box .input h4 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+}
+
+.wrapper footer .footer-box form{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin-top: 20px;
+}
+.wrapper footer .footer-box form input{
+    width: 300px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+.wrapper footer .footer-box form button{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    }
